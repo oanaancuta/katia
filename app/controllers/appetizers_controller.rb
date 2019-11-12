@@ -1,5 +1,5 @@
 class AppetizersController < ApplicationController
   def index
-    @appetizer = Appetizer.first
+    @appetizer = Appetizer.order("RANDOM()").first
   end
 end
